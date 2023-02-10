@@ -10,4 +10,7 @@ class Example_1 extends Controller
         $Ejem2 = "Bienvenido ".$Nombre." a SOT 1 XD";
         return view('Example1', compact('Ejem2'));
     }
+    function fHome(){
+        return view('Home');
+    }
 }

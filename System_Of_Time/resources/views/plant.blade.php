@@ -68,6 +68,9 @@
                     <li class="nav-item">
                         <a class="nav-link {{request()->routeIS('CEjemplo')}}" href="/Ejem/Anonimo/0">Example 2</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{request()->routeIS('homeInicio')}}" href="/iniciohome">Home</a>
+                    </li>
                 </ul>
             </div>
         </div>

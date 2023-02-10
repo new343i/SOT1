@@ -26,3 +26,4 @@ Route::get('/Ejem/{id?}/{id2?}', function (string $id, string $id2){
     return view('Ejem', compact('Ejem'));
 })->name('CEjemplo');
 
+Route::get('/homeInicio', [Example_1::class, 'fHome'])->name('NHome');
