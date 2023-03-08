@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Example_1;
+use App\Http\Controllers\controladorBD;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,16 +14,17 @@ use App\Http\Controllers\Example_1;
 |
 */
 
-/*Route::get('/', function () {
+Route::get('/', function () {
     return view('Example1');
 })->name('CInicio');
-*/
 
-Route::get('/{Nombre}', Example_1::class)->name('CInicio');
 
-Route::get('/Ejem/{id?}/{id2?}', function (string $id, string $id2){
-    $Ejem = "Hay ".$id2." cargas horarias por revisar ".$id;
-    return view('Ejem', compact('Ejem'));
-})->name('CEjemplo');
+Route::get('/Objetivos', function (){
+    return view('Objetivos');
+})->name('CObjetivos');
 
-Route::get('/homeInicio', [Example_1::class, 'fHome'])->name('NHome');
+Route::get('/insertMaestro', function(){
+    return view('addMaestro');
+})->name('CMaestro');
+
+Route::post('/insertMaestro/store', [controladorBD::class,'store'])->name('bdd_sot.store');

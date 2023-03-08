@@ -5,7 +5,7 @@
 <style>
     div.OG{
         width: 700px;
-        height: 115px;
+        height: 460px;
         border-radius: 8px;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
         overflow: hidden;
